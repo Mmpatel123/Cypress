@@ -1,11 +1,16 @@
 /* global Given, When, Then */
-const url = 'https://www.facebok.com';
+import homePage from "../pageObjects/HomePage";
 
-Given('I open Facebook page', () => {
+const url = 'https://www.facebok.com';
+import HomePage from "../pageObjects/HomePage";
+
+/*Given('I open Facebook page', () => {
     cy.visit(url);
+
+
 });
 
 Then('I see {string} in the title', (title) => {
     cy.title().should('include', title)
 
-});
+});*/
