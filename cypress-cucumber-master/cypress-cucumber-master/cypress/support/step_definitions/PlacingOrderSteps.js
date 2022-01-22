@@ -1,9 +1,8 @@
-/* global Given, When, Then */
+/* global Given, When, Then , And*/
 import HomePage from "../pageObjects/HomePage";
-import ProductPage from "../pageObjects/ProductPage"
+
 
 const homepage=new HomePage();
-const productPage=new ProductPage();
 Given('I am on the nopcommerce page', () => {
 homepage.BaseURL()
 
@@ -17,7 +16,6 @@ When('I enter correct Email and Password',function (){
 })
 Then('I Will be successfully logged in',function (){
     homepage.loginButton().click()
-
 
     
 })
@@ -46,7 +44,6 @@ Then('i will select a new address',function (){
 homepage.NewAddress().select("")
 })
 Then('I will add my billing details',function (){
-
     cy.get('#BillingNewAddress_FirstName').type('dev')
     cy.get('#BillingNewAddress_LastName').type('patel')
     cy.get('#BillingNewAddress_Email').type('lightyear9461@gmail.com')
@@ -79,5 +76,5 @@ Then('I Will Confirm my order',function (){
     homepage.OrderConfirmationContinueButton().should("be.visible")
     homepage.OrderConfirmationContinueButton().click()
 
-    
+
 })
