@@ -1,4 +1,4 @@
-class ProductPage
+/*class ProductPage
 {
 
 RegisterButton()
@@ -27,4 +27,4 @@ Email(){
     return cy.get('#register-button')
  }
 }
-export default ProductPage;
+export default ProductPage;*/

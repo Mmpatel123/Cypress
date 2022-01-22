@@ -1,7 +1,6 @@
 Feature: Log in
   description:login with nop nopcommerce using custom commands / features
   Scenario: log in on nopcommerce
-
     Given I am on the nopcommerce page
     Then  I click on the log in button
     When  I enter correct Email and Password
